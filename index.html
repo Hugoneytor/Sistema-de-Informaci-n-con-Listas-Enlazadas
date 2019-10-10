@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sistema de información con vectores</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h2>Artículo:</h2>
+    <div>
+        <div>
+            <label for="codigo">Código:</label>
+            <input type="number" id="codigo">
+        </div>
+        <br>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre"> 
+        </div>
+        <br>
+        <div>
+            <label for="precio">Precio: $</label>
+            <input type="number" id="precio">
+        </div>
+        <br>
+        <div>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad">
+        </div>
+        <br>
+        <div>
+            <label for="descripcion">Descripcion:</label>
+            <textarea id="descripcion" cols="20" rows="2"></textarea>
+        </div>
+        <br>
+        <div>
+            <button type="button" id="btnAgregar">Agregar Artículo</button>
+        </div>
+        <br>
+
+        <!--Tabla de Información-->
+        <h3>Reporte</h3>
+        <table id="info" class="table">
+            <tbody>
+                <tr>
+                    <td>Total de Artículos</td>
+                    <td id="totalArt"></td>
+                </tr>
+                <tr>
+                    <td>Precio Total</td>
+                    <td id="PrecioTotal"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div>
+        <!--Tabla de Artículos-->
+        <h3>Artículos Comprados</h3>
+        <table id="tablaArt" class="table">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <h4>toString</h4>
+    <p id="toString"></p>
+</body>
+<script src="main.js" type="module"></script>
+</html>
