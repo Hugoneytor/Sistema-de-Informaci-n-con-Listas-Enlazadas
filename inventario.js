@@ -1,4 +1,4 @@
-export default class Tabla{
+export default class Inventario{
     constructor(tableArt,tableInfo){
 
         //Tabla de los Artículos

@@ -1,9 +1,9 @@
 import Articulo from "./articulo.js";
-import Tabla from "./tabla.js";
+import Inventario from "./inventario.js";
 
 class Main{
     constructor(){
-        let tabla = new Tabla(
+        let inventario = new Inventario(
             document.querySelector("#tablaArt"),
             document.querySelector("#info")
         );
@@ -27,13 +27,8 @@ class Main{
 
         let articulo = new Articulo(objArticulo);
         
-            tabla.AgregarProducto(articulo);
-            tabla.AgregarEnTabla(articulo);
-            
-            
-       
-   
-
+            inventario.AgregarProducto(articulo);
+            inventario.AgregarEnTabla(articulo);
 
         toString.textContent = articulo.toString();
         
