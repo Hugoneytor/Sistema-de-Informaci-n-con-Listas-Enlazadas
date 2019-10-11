@@ -29,6 +29,7 @@ class Main{
         
             inventario.AgregarProducto(articulo);
             inventario.AgregarEnTabla(articulo);
+            //inventario._invertirArticulos(articulo);
 
         toString.textContent = articulo.toString();
         

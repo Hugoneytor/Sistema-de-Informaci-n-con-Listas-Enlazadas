@@ -75,6 +75,33 @@ export default class Inventario{
         return buscar;
       }
 
+    /*_invertirArticulos(articulo){
+      var invertir = this._primerArticulo;
+      var ultimo = this._ultimoArticulo;
+      invertir = ultimo;
+      while(true){
+        var anterior = ultimo._buscarAnterior(articulo.codigo);
+        ultimo.siguiente = anterior;
+        ultimo = anterior;
+      }
+
+    }*/
+    /*_invertirArticulos(articulo){
+      
+      var ultimo = this._ultimoArticulo;
+      var anterior = ultimo._buscarAnterior(articulo.codigo);
+      
+      while(ultimo.anterior != null){
+        
+        ultimo.siguiente = anterior;
+        ultimo = anterior;
+      }
+      console.log(ultimo);
+      
+    }*/
+
+    
+
     //Agrega el artículo a la interfaz de la tabla
     AgregarEnTabla(articulo, objArticulo){
         //Creación de las filas y columnas
